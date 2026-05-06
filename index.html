@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>My Portfolio</h2>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <div id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Limwell A. Ombal</span></h1>
+        <p class="role">Web Developer | CS Student</p>
+        <p class="intro">Welcome to my personal portfolio. I build simple and functional websites using HTML, CSS, and JavaScript.</p>
+        <div class="hero-btns">
+          <button onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">View My Projects</button>
+          <button class="outline" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="Images/MyPicture.png" alt="Limwell A. Ombal">
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="sub">A little bit about myself</p>
+    <div class="about-text">
+      <p>I'm a IT student who enjoys building websites and learning new technologies. I started learning web development and have been practicing by creating small projects.</p>
+      <p>Aside from web development, I also love making Roblox games using Lua scripting. I already made a game with actual players, but I'm still a beginner and continuing to improve my skills.</p>
+      <p>I'm interested in frontend development and I enjoy making things look clean and easy to use. My goal is to become a full-stack developer after I graduate.</p>
+      <div class="skills-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Firebase</span>
+        <span>GitHub</span>
+        <span>Lua</span>
+        <span>Roblox Studio</span>
+      </div>
+    </div>
+    <div class="about-cards">
+      <div class="about-card">
+        <h4>Education</h4>
+        <p>Bachelor of Science in Computer Science<br>Your University Name — Expected 2026</p>
+      </div>
+      <div class="about-card">
+        <h4>Interests</h4>
+        <p>Web development, UI design, building apps that help solve everyday problems, and creating Roblox games using Lua scripting.</p>
+      </div>
+      <div class="about-card">
+        <h4>Goals</h4>
+        <p>To get better at full-stack development and eventually work on real-world projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="sub">Some things I have worked on</p>
+    <div class="project-cards">
+
+      <div class="project-card">
+        <img src="Images/project1.png" alt="Name Icons">
+        <div class="project-body">
+          <h3>My Name in Icons</h3>
+          <div class="project-tools">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Font Awesome</span>
+          </div>
+          <p>A fun page that spells out my full name using Font Awesome letter icons styled with alternating red and blue colors.</p>
+          <a href="https://jsnothingk.github.io/Name/" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="Images/project2.png" alt="2026 Calendar">
+        <div class="project-body">
+          <h3>2026 Full Calendar</h3>
+          <div class="project-tools">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+          </div>
+          <p>A complete 2026 yearly calendar showing all 12 months in a clean grid layout. Built using Bootstrap cards and tables.</p>
+          <a href="https://jsnothingk.github.io/Calendar/" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="Images/project3.png" alt="Fruits Gallery">
+        <div class="project-body">
+          <h3>Fruits Gallery Website</h3>
+          <div class="project-tools">
+            <span>HTML</span><span>CSS</span>
+          </div>
+          <p>A simple website that displays different fruits. Click on a fruit name from the sidebar and the main area updates to show that fruit's image.</p>
+          <a href="https://jsnothingk.github.io/frame101/" target="_blank">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="sub">Feel free to reach out to me</p>
+    <div class="contact-links">
+      <a href="mailto:limwellombal@gmail.com">✉️ &nbsp; limwellombal@gmail.com</a>
+      <a href="https://github.com/jsnothingk" target="_blank"> &nbsp; github.com/jsnothingk</a>
+    </div>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your message..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Limwell Amatosa Ombal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
